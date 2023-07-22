@@ -19,6 +19,7 @@ const EmpEdit = () => {
       .catch((err) => {
         console.log(err.message);
       });
+    // eslint-disable-next-line
   }, []);
 
   const [id, idchange] = useState("");
