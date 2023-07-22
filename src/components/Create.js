@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
 const EmpCreate = () => {
+  // eslint-disable-next-line
   const [id, idchange] = useState("");
   const [name, namechange] = useState("");
   const [email, emailchange] = useState("");
@@ -61,7 +62,7 @@ const EmpCreate = () => {
                         onChange={(e) => namechange(e.target.value)}
                         className="form-control"
                       ></input>
-                      {name.length == 0 && validation && (
+                      {name.length === 0 && validation && (
                         <span className="text-danger">Enter the name</span>
                       )}
                     </div>
