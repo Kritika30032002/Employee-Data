@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Employee from "./components/Employee";
+import Create from "./components/Create";
+import Detail from "./components/Detail";
+import Update from "./components/Update";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>React JS CRUD Operations using JSON Server REST API</h1>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Employee />} />
+          <Route path="/employee/create" element={<Create />} />
+          <Route path="/employee/detail/:empid" element={<Detail />} />
+          <Route path="/employee/update/:empid" element={<Update />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }

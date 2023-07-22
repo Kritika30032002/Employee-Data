@@ -1,0 +1,30 @@
+{
+  "employee": [
+    {
+      "name": "Kiraga",
+      "email": "Kiraga332@gmail.com",
+      "phone": "78564342",
+      "active": true,
+      "id": 1
+    },
+    {
+      "name": "Rani Devi",
+      "email": "rd@in.com",
+      "phone": "753829362",
+      "active": true,
+      "id": 2
+    },
+    {
+      "id": 3,
+      "name": "Soniya",
+      "email": "soniya42@in.com",
+      "phone": "45655486"
+    },
+    {
+      "id": 4,
+      "name": "Charul Sharma",
+      "email": "cs67354@in.com",
+      "phone": "45744374"
+    }
+  ]
+}
