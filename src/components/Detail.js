@@ -17,10 +17,12 @@ const EmpDetail = () => {
       .catch((err) => {
         console.log(err.message);
       });
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   return (
     <div>
+      {/* <div className="row">
+                <div className="offset-lg-3 col-lg-6"> */}
+
       <div className="container ">
         <div className="card row">
           <div className="card-title m-3">

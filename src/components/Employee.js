@@ -38,7 +38,6 @@ const EmpListing = () => {
       .catch((err) => {
         console.log(err.message);
       });
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   return (
     <div className="container">
@@ -71,30 +70,30 @@ const EmpListing = () => {
                     <td>{item.email}</td>
                     <td>{item.phone}</td>
                     <td>
-                      <button
+                      <a
                         onClick={() => {
                           LoadEdit(item.id);
                         }}
                         className="btn btn-success"
                       >
                         Edit
-                      </button>
-                      <button
+                      </a>
+                      <a
                         onClick={() => {
                           Removefunction(item.id);
                         }}
                         className="btn btn-danger"
                       >
                         Remove
-                      </button>
-                      <button
+                      </a>
+                      <a
                         onClick={() => {
                           LoadDetail(item.id);
                         }}
                         className="btn btn-primary"
                       >
                         Details
-                      </button>
+                      </a>
                     </td>
                   </tr>
                 ))}
