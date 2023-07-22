@@ -11,6 +11,8 @@ const EmpCreate = () => {
 
   const navigate = useNavigate();
 
+  idchange(id);
+
   const handlesubmit = (e) => {
     e.preventDefault();
     const empdata = { name, email, phone, active };
@@ -61,7 +63,7 @@ const EmpCreate = () => {
                         onChange={(e) => namechange(e.target.value)}
                         className="form-control"
                       ></input>
-                      {name.length == 0 && validation && (
+                      {name.length === 0 && validation && (
                         <span className="text-danger">Enter the name</span>
                       )}
                     </div>
